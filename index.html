@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>My Goals</title>
+    <style>
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Goals For The Next Two Years.</h1>
+    <p>My goals for the next two years are not certain yet.But i know that there are some things i need to achieve in the span of two years and they include:</p>
+    <ul>
+        <li>Mastering HTML, CSS, and JavaScript.</li>
+        <li>Learning Frameworks and libraries.</li>
+        <li>Improving Responsive Design Skills.</li>
+        <li>Enhancing Performance Optimaization: Aim to optimize the performance of your web applications.</li>
+    </ul>
+    <div>
+        <span data-testid="slackDisplayName">
+
+            Slack Name: <span id="yourslackname">Oluwagbohunmi Oluwagbohunmi.</span>
+        </span>
+    </div>
+    <div> 
+        <span data-testid="currentTimeUTC">
+            Current Time in UTC: <span id="currentTime">16:32.</span>
+        </span>
+    </div>
+    <div>   
+        <span data-testid="currentDay">
+            Current Day of the week: <span id="currentDay">Monday.</span>
+        </span>
+    </div>
+    <div>
+        <span data-testid="slackEmail">
+            Slack Email: <span id="slackEmail">favourolatunbosun025@gmail.com</span>
+        </span>
+    </div>
+    <div>  
+        <span data-testid="slackProfilePicture">
+            Slack Profile Picture: <img id="slackProfilePicture" src="images/Slack profile picture.jpg" alt="Profile Picture">
+        </span>
+    </div>
+    <div> 
+        <span data-testid="hngLink">
+            <a href="https://hng.tech/learn">HNG Tech</a>
+        </span>
+    </div>
+    <div>  
+        <span data-testid="keywordLink">
+            <a href="https://keyword.dog">Keyword Dog</a>
+        </span>
+    </div>
+    <div>
+        <span data-testid="scrapeanywebLink">
+    
+            <a href="https://scrapeanyweb.site">Scrape Any Web</a>
+        </span>
+    </div>
+    <script>
+        document.getElementById('currentTime').textContent = new Date().toUTCString();
+        document.getElementById('currentDay').textContent = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(new Date());
+    </script>
+</body>
+</html>
